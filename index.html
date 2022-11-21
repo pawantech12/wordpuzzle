@@ -1,0 +1,96 @@
+<!-- Created by pawan kumavat-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Word Puzzle - Think And Win</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta charset="utf-8">
+    <!-- Css file link  -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- bootstrap icon cdn link  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <!-- favicon link  -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <div id="container">
+        <div id="bda">
+            <span style="left:5%;animation-delay:3s;animation:anim2 5s ease-in infinite;">💚</span>
+            <span style="left:40%;animation-delay:4s;animation:anim2 7s ease-out infinite;">⚡</span>
+            <span style="left:65%;animation-delay:2s;animation:anim2 16s ease-in-out infinite;" >🌺</span>
+            <span style="left:80%;animation-delay:3s;animation:anim2 8s linear infinite;" >❄</span>
+            <span style="left:20%;animation-delay:3s;animation:anim2 9s ease-in infinite;">👍</span>
+            <span style="left:50%;animation-delay:4s;animation:anim2 10s ease-out infinite;">🍁</span>
+            <span style="left:60%;animation-delay:2s;animation:anim2 11s ease-in-out infinite;" >🎈</span>
+            <span style="left:85%;animation-delay:5s;animation:anim2 6s linear infinite;" >🌼</span>
+        </div>
+        <div id="wContainer">
+            <div id="topBar">
+                <h3 id="levelDiv"><span id="level">Level <span id="levelNum">1</span></span><span id="coinDiv"><span id="coin" style="padding-bottom: 2px;">0</span><span id="coinSign" style="color:#08ae26">💰</span></span></h3>
+                <div id="wcont">
+                    <div class="word">
+                        <!--<div class="wld">.</div>
+                        <div class="wld">.</div>-->
+                    </div>
+                    <div class="word"></div>
+                    <div class="word"></div>
+                    <div class="word"></div>
+                    <div class="word"></div>
+                </div>
+            </div>
+        </div>
+        <div id="lContainer">
+            <div id="l1" class="l"></div>
+            <div id="l2" class="l"></div>
+            <div id="l3" class="l"></div>
+            <div id="l4" class="l"></div>
+            <div id="l5" class="l"></div>
+            <div id="preview"><span id="previewTxt"></span></div>
+        </div>
+        <canvas id="gameContainer"></canvas>
+        <div id="over">
+            <h2 id="complete"><span id="title">Word Puzzle</span></h2>
+            <div id="starCnt">
+                <div id="starbg"><span id="stb1">⭐</span><span id="stb2">⭐</span><span id="stb3">⭐</span></div>
+                <div id="star"><span>⭐</span><span>⭐</span><span>⭐</span></div>
+            </div>
+            <div id="nextBtnCnt">
+                <div id="levelBtnCnt">
+                    <button id="levelBtn">Levels</button>
+                </div>
+                <button id="nextBtn">Next Level</button>
+                <button id="st"><i class="bi bi-play-fill"></i></button>
+            </div>
+            <div id="levelCnt">
+                <div id="levelTitle">
+                    <button>Levels</button>
+                </div>
+                <div id="levelBack">
+                    <button>Back</button>
+                </div>
+                <div id="levelList"></div>
+            </div>
+        </div>
+        <div id="shuffle"><i class="bi bi-arrow-clockwise"></i></div>
+        <div id="hint">💡</div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html
